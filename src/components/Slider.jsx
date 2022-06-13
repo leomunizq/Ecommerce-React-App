@@ -5,7 +5,6 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: coral;
   position: relative;
 `
 const Arrow = styled.div`
@@ -25,6 +24,43 @@ const Arrow = styled.div`
   margin: auto;
   opacity: 0.5;
 `
+const Wrapper = styled.div`
+  height: 100%;
+`
+
+const Slide = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`
+const ImgContainer = styled.div`
+  height: 100%;
+  flex: 1;
+`
+
+const Image = styled.img`
+  height: 80%;
+`
+const InfoContainer = styled.div`
+  flex: 1;
+  padding: 50px;
+`
+const Title = styled.h1`
+  font-size: 70px;
+`
+const Desc = styled.p`
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+`
+const Button = styled.button`
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`
 
 const Slider = () => {
   return (
@@ -32,6 +68,34 @@ const Slider = () => {
       <Arrow direction="left">
         <ArrowLeftOutlined />
       </Arrow>
+      <Wrapper>
+        <Slide>
+          <ImgContainer>
+            <Image src="https://www.nicepng.com/png/full/8-88585_women-fashion-png-example-of-magazine-cover.png" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>SUMMER PROMO</Title>
+            <Desc>
+              {' '}
+              Don't compromise on style! Get flat 30% off fow new arrivals.
+            </Desc>
+            <Button> Show Now</Button>
+          </InfoContainer>
+        </Slide>
+        <Slide>
+          <ImgContainer>
+            <Image src="https://www.nicepng.com/png/full/8-88585_women-fashion-png-example-of-magazine-cover.png" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>SUMMER PROMO</Title>
+            <Desc>
+              {' '}
+              Don't compromise on style! Get flat 30% off fow new arrivals.
+            </Desc>
+            <Button> Show Now</Button>
+          </InfoContainer>
+        </Slide>
+      </Wrapper>
       <Arrow direction="right">
         <ArrowRightOutlined />
       </Arrow>
