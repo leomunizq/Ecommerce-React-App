@@ -22,8 +22,8 @@ const Info = styled.div`
   align-items: center;
   justify-content: center;
   background: rgba(2, 2, 2, 0.15);
-  transition: all 1.5 ease;
-  :hover {
+  transition: all 0.3s ease;
+  &:hover {
     background: transparent;
     opacity: 1;
   }
