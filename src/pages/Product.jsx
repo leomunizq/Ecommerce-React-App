@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
-import { Remove } from '@material-ui/icons'
+import { Add, Remove } from '@material-ui/icons'
 import { Button } from '@material-ui/core'
 
 const Container = styled.div``
@@ -70,6 +70,43 @@ const FilterSize = styled.select`
 
 const FilterSizeOption = styled.option``
 
+const AddContainer = styled.div`
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+`
+
+const AmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+`
+
+const Amount = styled.span`
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+`
+
+const ButtonProd = styled.button`
+  padding: 15px;
+  border: 1px solid teal;
+  background-color: #fff;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: teal;
+    color: #fff;
+  }
+`
+
 const Product = () => {
   return (
     <Container>
@@ -112,7 +149,7 @@ const Product = () => {
               <Amount>1</Amount>
               <Add />
             </AmountContainer>
-            <Button>ADD TO CART</Button>
+            <ButtonProd>ADD TO CART</ButtonProd>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
