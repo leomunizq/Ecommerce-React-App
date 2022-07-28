@@ -22,6 +22,5 @@ The project is responsive, adaptable to all screens, whether desktop, tablet or 
 
 
 ## :rocket: Deploy
- Wait
-
+ecproject.netlify.app
 
