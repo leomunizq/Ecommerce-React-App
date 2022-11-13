@@ -22,5 +22,5 @@ The project is responsive, adaptable to all screens, whether desktop, tablet or 
 
 
 ## :rocket: Deploy
-ecproject.netlify.app
+https://ecproject.netlify.app/
 
